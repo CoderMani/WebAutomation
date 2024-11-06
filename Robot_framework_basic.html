@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Robot Framework Keywords for Automation Testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        h3 {
+            color: #2980b9;
+        }
+        pre {
+            background-color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            overflow-x: auto;
+        }
+        ul {
+            line-height: 1.8em;
+        }
+        .keyword-group {
+            margin-bottom: 30px;
+        }
+        .keyword-group ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .keyword-group li {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Robot Framework Keywords for Automation Testing</h1>
+
+    <div class="keyword-group">
+        <h2>Core Robot Framework Keywords</h2>
+        <ul>
+            <li><strong>Test Case Control:</strong>
+                <ul>
+                    <li>Run Keyword If</li>
+                    <li>Run Keyword And Ignore Error</li>
+                    <li>Run Keyword And Return Status</li>
+                    <li>Continue For</li>
+                    <li>Exit For Loop</li>
+                    <li>Repeat Keyword</li>
+                    <li>Wait For Keyword To Pass</li>
+                </ul>
+            </li>
+            <li><strong>Assertions:</strong>
+                <ul>
+                    <li>Should Be Equal</li>
+                    <li>Should Not Be Equal</li>
+                    <li>Should Be True</li>
+                    <li>Should Be False</li>
+                    <li>Should Be Empty</li>
+                    <li>Should Not Be Empty</li>
+                    <li>Should Contain</li>
+                    <li>Should Not Contain</li>
+                    <li>Should Match</li>
+                    <li>Should Not Match</li>
+                    <li>Should Be Greater Than</li>
+                    <li>Should Be Greater Than Or Equal</li>
+                    <li>Should Be Less Than</li>
+                    <li>Should Be Less Than Or Equal</li>
+                    <li>Should Be Equal As Numbers</li>
+                </ul>
+            </li>
+            <li><strong>Data Handling:</strong>
+                <ul>
+                    <li>Create List</li>
+                    <li>Create Dictionary</li>
+                    <li>Get From List</li>
+                    <li>Get From Dictionary</li>
+                    <li>Set List Value</li>
+                    <li>Set Dictionary Value</li>
+                    <li>Remove From List</li>
+                    <li>Remove From Dictionary</li>
+                    <li>Length</li>
+                    <li>Join</li>
+                    <li>Split</li>
+                </ul>
+            </li>
+            <li><strong>Variables:</strong>
+                <ul>
+                    <li>Set Variable</li>
+                    <li>Set Suite Variable</li>
+                    <li>Set Test Variable</li>
+                    <li>Get Variable Value</li>
+                    <li>Evaluate</li>
+                </ul>
+            </li>
+            <li><strong>Loops:</strong>
+                <ul>
+                    <li>For</li>
+                    <li>While</li>
+                </ul>
+            </li>
+            <li><strong>Logging & Reporting:</strong>
+                <ul>
+                    <li>Log</li>
+                    <li>Log To Console</li>
+                    <li>Log To File</li>
+                    <li>Capture Page Screenshot</li>
+                    <li>Capture Screenshot</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="keyword-group">
+        <h2>SeleniumLibrary Keywords (Web Automation)</h2>
+        <ul>
+            <li><strong>Browser Control:</strong>
+                <ul>
+                    <li>Open Browser</li>
+                    <li>Close Browser</li>
+                    <li>Maximize Browser Window</li>
+                    <li>Set Browser Implicit Wait</li>
+                    <li>Go To</li>
+                    <li>Reload Page</li>
+                    <li>Refresh</li>
+                    <li>Get Title</li>
+                    <li>Get URL</li>
+                </ul>
+            </li>
+            <li><strong>Element Interaction:</strong>
+                <ul>
+                    <li>Click Element</li>
+                    <li>Input Text</li>
+                    <li>Clear Element Text</li>
+                    <li>Select From List By Value</li>
+                    <li>Select From List By Label</li>
+                    <li>Select From List By Index</li>
+                    <li>Mouse Over</li>
+                    <li>Wait Until Element Is Visible</li>
+                    <li>Wait Until Element Contains</li>
+                    <li>Wait Until Page Contains</li>
+                    <li>Get Element Text</li>
+                    <li>Get Element Attribute</li>
+                </ul>
+            </li>
+            <li><strong>Element Verification:</strong>
+                <ul>
+                    <li>Element Should Be Visible</li>
+                    <li>Element Should Be Invisible</li>
+                    <li>Element Should Contain</li>
+                    <li>Element Should Not Contain</li>
+                    <li>Element Should Be Enabled</li>
+                    <li>Element Should Be Disabled</li>
+                </ul>
+            </li>
+            <li><strong>Alerts & Windows:</strong>
+                <ul>
+                    <li>Handle Alert</li>
+                    <li>Dismiss Alert</li>
+                    <li>Accept Alert</li>
+                    <li>Switch To Window</li>
+                    <li>Close Window</li>
+                </ul>
+            </li>
+            <li><strong>JavaScript Execution:</strong>
+                <ul>
+                    <li>Execute JavaScript</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="keyword-group">
+        <h2>AppiumLibrary Keywords (Mobile Automation)</h2>
+        <ul>
+            <li>Open Application</li>
+            <li>Close Application</li>
+            <li>Tap</li>
+            <li>Swipe</li>
+            <li>Scroll</li>
+            <li>Set Value</li>
+            <li>Get Text</li>
+            <li>Element Should Be Visible</li>
+            <li>Element Should Contain</li>
+        </ul>
+    </div>
+
+    <div class="keyword-group">
+        <h2>RequestsLibrary Keywords (API Testing)</h2>
+        <ul>
+            <li>Create Session</li>
+            <li>Get Request</li>
+            <li>Post Request</li>
+            <li>Put Request</li>
+            <li>Delete Request</li>
+            <li>Status Should Be</li>
+            <li>Response Should Contain</li>
+        </ul>
+    </div>
+
+    <div class="keyword-group">
+        <h2>Miscellaneous Keywords</h2>
+        <ul>
+            <li>Execute Command</li>
+            <li>Run Process</li>
+            <li>Wait Until Keyword Succeeds</li>
+            <li>Sleep</li>
+        </ul>
+    </div>
+
+</body>
+</html>
